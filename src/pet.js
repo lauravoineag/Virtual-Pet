@@ -27,6 +27,9 @@ class Pet {
         } else {
             this.hunger=minHunger;
         }
+        if (!this.isAlive) {
+            throw new Error('Your pet is no longer alive :(');
+          }
     }
 
     checkup() {
